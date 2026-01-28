@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>资源领取</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC";
+      background: #f6f8fb;
+      padding: 20px;
+    }
+    .box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 520px;
+      margin: auto;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .tip {
+      background: #eef2ff;
+      padding: 12px;
+      border-left: 4px solid #4f46e5;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .code {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      margin: 20px 0;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      background: #4f46e5;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+    }
+    .warn {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #f59e0b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="title" id="title">资源加载中...</div>
+
+    <div class="tip">
+      使用方法：<br />
+      ① 打开 <b>夸克网盘 App</b><br />
+      ② 搜索框粘贴下方口令<br />
+      ③ 点击转存即可
+    </div>
+
+    <div class="code" id="code">---</div>
+
+    <button onclick="copyCode()">一键复制口令</button>
+
+    <div class="warn">⚠ 请务必在夸克 App 内操作</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
